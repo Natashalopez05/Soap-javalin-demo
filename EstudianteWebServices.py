@@ -14,7 +14,7 @@ def crear_estudiante(matricula, nombre, carrera):
     return cliente.service.crearEstudiante(estudiante)
 
 def borrar_estudiante(matricula):
-    return cliente.service.borrarEstudiante(matricula)
+    return cliente.service.eliminarEstudiante({'matricula': matricula})
 
 
 if __name__ == "__main__":
